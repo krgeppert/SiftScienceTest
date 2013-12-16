@@ -1,0 +1,19 @@
+<div><b>Bad politicians</b></div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<td>Name</td>
+			<td>Party</td>
+			<td>House vs Senate</td>
+			<td>% time voted</td>
+		</tr>
+	</thead>
+	<tbody> 
+		<tr ng-repeat="person in legislators">
+			<td>{{person.first_name + ' ' + person.last_name}}</td>
+			<td>{{person.party}}</td>
+			<td>{{person.title}}</td>
+			<td>{{data[person.id].votePercentage}}</td>
+		</tr>
+	</tbody>
+</table>
